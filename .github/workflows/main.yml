@@ -27,7 +27,7 @@ jobs:
       # should save this keys in github, settings of the project, secrets :
       # AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
       - name: aws deploy
-        run: BUILD_DIRECTORY=build BUCKET_NAME=s3://hpsportbucket AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY }} AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} npm run deploy-aws
+        run: BUILD_DIRECTORY=build BUCKET_NAME=hpsportbucket AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY }} AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} npm run deploy-aws
       #BUILD_DIRECTORY=build BUCKET_NAME=hpsportbucket AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY }} AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} npm run deploy-aws
       #AWS Access Key: AKIAUCFZ3TWOFQHNM3UV
       #AWS Secret Access Key: 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
